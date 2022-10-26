@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&d');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+body{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #c9ffce;
+	position: relative;
+
+}
+body::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #00ab0e;
+	clip-path: inset(47% 0 0 0);
+	z-index: -1;
+}
+
+
+
+.container{
+max-width: 950px;
+overflow:hidden ;
+width: 100%;
+padding: 80px 0;
+}
+.container .main-card{
+	width: 1200%;
+	display: flex;
+	justify-content: space-evenly;
+	transition:all 1s ease;
+}
+
+#two:checked  ~  .main-card {
+
+	margin-left: -100%;
+
+}
+#three:checked  ~  .main-card {
+
+	margin-left: -200%;
+
+}
+#four:checked  ~  .main-card {
+
+	margin-left: -300%;
+
+}
+
+#five:checked  ~  .main-card {
+
+	margin-left: -400%;
+
+}
+
+
+#six:checked  ~  .main-card {
+
+	margin-left: -500%;
+
+}
+
+#seven:checked  ~  .main-card {
+
+	margin-left: -600%;
+
+}
+
+#eight:checked  ~  .main-card {
+
+	margin-left: -700%;
+
+}
+
+#nine:checked  ~  .main-card {
+
+	margin-left: -800%;
+
+}
+#ten:checked  ~  .main-card {
+
+	margin-left: -900%;
+
+}
+#eleven:checked  ~  .main-card {
+
+	margin-left: -1000%;
+
+}
+
+#twelve:checked  ~  .main-card {
+
+	margin-left: -1100%;
+
+}
+.main-card .cards{
+    width: calc(100% / 2 - 10px);
+	display: flex;
+	justify-content: space-between;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+.main-card .cards .card {
+background: #fff;
+width: calc(100% / 3 - 10px);
+padding: 30px;
+border-radius: 24px;
+transition: all 0.4s ease;
+}
+
+.main-card .cards .card:hover{
+	transform: translateY(-15px);
+}
+
+
+.cards .card .content{
+	display: flex;
+	flex-direction:column ;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.cards .card .content .img {
+height: 130px;
+width: 130px;
+margin-bottom: 14px;
+background:#00ff15;
+padding: 3px;
+border-radius: 50%;
+
+}
+
+.cards .card .content .img img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 50%; 
+border: 3px solid #fff;
+
+}
+.card .content .details .name{
+	font-size: 20px;
+	font-weight:500 ;
+}
+.card .content .details .job{
+	font-size: 20px;
+	color: #00ff15;
+}
+
+.card .content .media-icons {
+	display: flex;
+	margin-top: 10px;
+}
+
+.card .content .media-icons a{
+	height: 35px;
+	width: 35px;
+	color: #fff;
+	background:#00ff15;
+    margin: 0 4px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+    font-size: 14px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.card .content .media-icons a:hover{
+border-color: #00ff15;
+color: #00ff15;
+background: #fff;
+
+}
+
+.button{
+	display: flex;
+	margin: 20px;
+	justify-content: center;
+}
+.button label{
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  margin: 0 4px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.button label.active{
+	width: 35px;
+}
+
+#one:checked ~ .button label.one{
+	width: 35px;
+}  
+#two:checked ~ .button label.two{
+	width: 35px;
+}  
+
+#three:checked ~ .button label.three{
+	width: 35px;
+}  
+
+#four:checked ~ .button label.four{
+	width: 35px;
+}  
+
+#five:checked ~ .button label.five{
+	width: 35px;
+}  
+
+#six:checked ~ .button label.six{
+	width: 35px;
+}  
+
+#seven:checked ~ .button label.seven{
+	width: 35px;
+}  
+#eight:checked ~ .button label.eight{
+	width: 35px;
+}  
+
+#nine:checked ~ .button label.nine{
+	width: 35px;
+}  
+
+#ten:checked ~ .button label.ten{
+	width: 35px;
+} 
+
+#eleven:checked ~ .button label.eleven{
+	width: 35px;
+}  
+
+#twelve:checked ~ .button label.twelve{
+	width: 35px;
+}  
+
+#one:checked  ~ .button label.twelve{
+	width: 15px;
+}
+
+
+#twelve:checked  ~ .button label.eleven{
+	width: 15px;
+}
+
+
+#eleven:checked  ~ .button label.ten{
+	width: 15px;
+}
+
+
+#ten:checked  ~ .button label.nine{
+	width: 15px;
+}
+
+
+#nine:checked  ~ .button label.eight{
+	width: 15px;
+}
+
+
+#eight:checked  ~ .button label.seven{
+	width: 15px;
+}
+
+#seven:checked  ~ .button label.six{
+	width: 15px;
+}
+
+
+#six:checked  ~ .button label.five{
+	width: 15px;
+}
+
+
+#five:checked  ~ .button label.four{
+	width: 15px;
+}
+
+#four:checked  ~ .button label.three{
+	width: 15px;
+}
+
+#three:checked  ~ .button label.two{
+	width: 15px;
+}
+
+#two:checked  ~ .button label.one{
+	width: 15px;
+}
+#one:checked  ~ .button label.twelve{
+	width: 15px;
+}
+
+input[type="radio"]{
+	display: none;
+}
+
+@media (max-width: 768px){
+
+.main-card .cards .card {
+width: calc(100% / 2 - 10px);
+margin: 20px 0 10px 0;
+}
+}
+
+@media (max-width:600px){
+
+.main-card .cards .card {
+width:100%;
+}
+}
